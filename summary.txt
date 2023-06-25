@@ -5,3 +5,9 @@ To complete the given tasks, the script utilizes the yfinance library to extract
 The script is divided into three main functions: extract_historical_data, calculate_average_volume, and visualize_stock_performance. Error handling measures are implemented in each function to catch and display any potential errors that may occur during data extraction, processing, or visualization.
 
 The main script demonstrates the workflow by calling the functions sequentially. It sets the stock symbol, 'AAPL' (Apple Inc.) as an example, but you can modify it to extract data for any publicly traded company listed on the NSE. The script prints the average daily trading volume and displays the candlestick chart using the extracted data.
+
+Challenges:
+
+One potential challenge you might encounter is dealing with missing or incomplete data. The script assumes that the data extraction process is successful and returns a pandas DataFrame with all the necessary columns (Open, High, Low, Close, Volume). However, depending on the API used or the availability of data, there might be cases where the data returned is incomplete or contains missing values. It's important to handle such scenarios by implementing appropriate error handling and data cleaning techniques.
+
+Another challenge is selecting the appropriate visualization library and customizing the chart according to your preferences. The example script uses Plotly, which offers interactive and visually appealing charts. However, you can modify the code to use other visualization libraries like matplotlib or seaborn if desired. Additionally, you can customize the chart's title, axis labels, color scheme, and other visual aspects based on your requirements.
