@@ -1,0 +1,7 @@
+Summary:
+
+To complete the given tasks, the script utilizes the yfinance library to extract historical data for a publicly traded company listed on the NSE. It then uses pandas to process the extracted data by calculating the average daily trading volume. Finally, it visualizes the stock's performance over the selected period using a candlestick chart created with Plotly.
+
+The script is divided into three main functions: extract_historical_data, calculate_average_volume, and visualize_stock_performance. Error handling measures are implemented in each function to catch and display any potential errors that may occur during data extraction, processing, or visualization.
+
+The main script demonstrates the workflow by calling the functions sequentially. It sets the stock symbol, 'AAPL' (Apple Inc.) as an example, but you can modify it to extract data for any publicly traded company listed on the NSE. The script prints the average daily trading volume and displays the candlestick chart using the extracted data.
